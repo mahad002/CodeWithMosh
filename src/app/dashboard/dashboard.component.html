@@ -1,0 +1,118 @@
+<div class="dashboard-container">
+  <nav class="sidebar">
+    <ul class="sidebar-nav">
+      <li (click)="selectComponent('getting-started')" routerLinkActive="active current" [@fadeInOut] >
+        <div class="menu-item">
+          <a >Getting Started</a>
+        </div>
+      </li>
+      <li routerLinkActive="active current" [@fadeInOut] (click)="selectComponent('typescript')">
+        <div class="menu-item">
+          <a >TypeScript</a>
+        </div>
+      </li>
+      <li routerLinkActive="active current" [@fadeInOut] (click)="selectComponent('angular-fundamentals')">
+        <div class="menu-item">
+          <a>Angular Fundamentals</a>
+        </div>
+      </li>
+      <li routerLinkActive="active current" [@fadeInOut] (click)="selectComponent('displaying-event')">
+        <div class="menu-item">
+          <a >Displaying Data and Handling Events</a>
+        </div>
+      </li>
+      <li routerLinkActive="active current" [@fadeInOut] (click)="selectComponent('reusable-components')">
+        <div class="menu-item">
+          <a >Building Reusable Components</a>
+        </div>
+      </li>
+      <li routerLinkActive="active current" [@fadeInOut] (click)="selectComponent('directives')">
+        <div class="menu-item">
+          <a >Directives</a>
+        </div>
+      </li>
+      <li routerLinkActive="active current" [@fadeInOut] (click)="selectComponent('template-driven-forms')">
+        <div class="menu-item">
+          <a >Template-driven Forms</a>
+        </div>
+      </li>
+      <li routerLinkActive="active current" [@fadeInOut] (click)="selectComponent('reactive-forms')">
+        <div class="menu-item">
+          <a >Reactive Forms</a>
+        </div>
+      </li>
+      <li routerLinkActive="active current" [@fadeInOut] (click)="selectComponent('http-service')">
+        <div class="menu-item">
+          <a>Consuming HTTP Services</a>
+        </div>
+      </li>
+      <li routerLinkActive="active current" [@fadeInOut] (click)="selectComponent('routing-navigation')">
+        <div class="menu-item">
+          <a>Routing and Navigation</a>
+        </div>
+      </li>
+      <li routerLinkActive="active current" [@fadeInOut] (click)="selectComponent('authentication-authorization')">
+        <div class="menu-item">
+          <a >Authentication and Authorization</a>
+        </div>
+      </li>
+      <li routerLinkActive="active current" [@fadeInOut] (click)="selectComponent('deployment')">
+        <div class="menu-item">
+          <a >Deployment</a>
+        </div>
+      </li>
+      <li routerLinkActive="active current" [@fadeInOut] (click)="selectComponent('realtime-firebase')">
+        <div class="menu-item">
+          <a >Real-time Apps with Firebase</a>
+        </div>
+      </li>
+      <li routerLinkActive="active current" [@fadeInOut] (click)="selectComponent('animation')">
+        <div class="menu-item">
+          <a>Angular Animations</a>
+        </div>
+      </li>
+      <li routerLinkActive="active current" [@fadeInOut] (click)="selectComponent('material')">
+        <div class="menu-item">
+          <a>Angular Material</a>
+        </div>
+      </li>
+      <li routerLinkActive="active current" [@fadeInOut] (click)="selectComponent('unit-testing')">
+        <div class="menu-item">
+          <a >Unit Testing</a>
+        </div>
+      </li>
+      <li routerLinkActive="active current" [@fadeInOut] (click)="selectComponent('integration-testing')">
+        <div class="menu-item">
+          <a >Integration Testing</a>
+        </div>
+      </li>
+      <li routerLinkActive="active current" [@fadeInOut] (click)="selectComponent('project')">
+        <div class="menu-item">
+          <a>Project</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <main class="content">
+    <div class="content-container">
+      <app-getting-started *ngIf="selectedComponent === 'getting-started'"></app-getting-started>
+      <app-typescript *ngIf="selectedComponent === 'typescript'"></app-typescript>
+      <app-angular-fundamentals *ngIf="selectedComponent === 'angular-fundamentals'"></app-angular-fundamentals>
+      <app-displaying-event *ngIf="selectedComponent === 'displaying-event'"></app-displaying-event>
+      <app-reusable-components *ngIf="selectedComponent === 'reusable-components'"></app-reusable-components>
+      <app-directives *ngIf="selectedComponent === 'directives'"></app-directives>
+      <app-template-driven-forms *ngIf="selectedComponent === 'template-driven-forms'"></app-template-driven-forms>
+      <app-reactive-forms *ngIf="selectedComponent === 'reactive-forms'"></app-reactive-forms>
+      <app-http-service *ngIf="selectedComponent === 'http-service'"></app-http-service>
+      <app-routing-navigation *ngIf="selectedComponent === 'routing-navigation'"></app-routing-navigation>
+      <app-authentication-authorization *ngIf="selectedComponent === 'authentication-authorization'"></app-authentication-authorization>
+      <app-deployment *ngIf="selectedComponent === 'deployment'"></app-deployment>
+      <app-realtime-firebase *ngIf="selectedComponent === 'realtime-firebase'"></app-realtime-firebase>
+      <app-animation *ngIf="selectedComponent === 'animation'"></app-animation>
+      <app-material *ngIf="selectedComponent === 'material'"></app-material>
+      <app-unit-testing *ngIf="selectedComponent === 'unit-testing'"></app-unit-testing>
+      <app-integration-testing *ngIf="selectedComponent === 'integration-testing'"></app-integration-testing>
+      <app-project *ngIf="selectedComponent === 'project'"></app-project>
+    </div>
+  </main>
+</div>
