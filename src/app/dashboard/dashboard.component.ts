@@ -2,24 +2,24 @@ import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { ActivatedRoute } from '@angular/router';
 
-import { GettingStartedComponent } from './getting-started/getting-started.component';
-import { TypescriptComponent } from './typescript/typescript.component';
-import { AngularFundamentalsComponent } from './angular-fundamentals/angular-fundamentals.component';
-import { DisplayingEventComponent } from './displaying-event/displaying-event.component';
-import { ReusableComponentsComponent } from './reusable-components/reusable-components.component';
-import { DirectivesComponent } from './directives/directives.component';
-import { TemplateDrivenFormsComponent } from './template-driven-forms/template-driven-forms.component';
-import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
-import { HttpServiceComponent } from './http-service/http-service.component';
-import { RoutingNavigationComponent } from './routing-navigation/routing-navigation.component';
-import { AuthenticationAuthorizationComponent } from './authentication-authorization/authentication-authorization.component';
-import { DeploymentComponent } from './deployment/deployment.component';
-import { RealtimeFirebaseComponent } from './realtime-firebase/realtime-firebase.component';
-import { AnimationComponent } from './animation/animation.component';
-import { MaterialComponent } from './material/material.component';
-import { UnitTestingComponent } from './unit-testing/unit-testing.component';
-import { IntegrationTestingComponent } from './integration-testing/integration-testing.component';
-import { ProjectComponent } from './project/project.component';
+// import { GettingStartedComponent } from './getting-started/getting-started.component';
+// import { TypescriptComponent } from './typescript/typescript.component';
+// import { AngularFundamentalsComponent } from './angular-fundamentals/fund-main/fund-main.component';
+// import { DisplayDataMainComponent } from './displaying-event/display-data-main/display-data-main.component';
+// import { ReusableComponentsComponent } from './reusable-components/reusable-components.component';
+// import { DirectivesComponent } from './directives/directives.component';
+// import { TemplateDrivenFormsComponent } from './template-driven-forms/template-driven-forms.component';
+// import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
+// import { HttpServiceComponent } from './http-service/http-service.component';
+// import { RoutingNavigationComponent } from './routing-navigation/routing-navigation.component';
+// import { AuthenticationAuthorizationComponent } from './authentication-authorization/authentication-authorization.component';
+// import { DeploymentComponent } from './deployment/deployment.component';
+// import { RealtimeFirebaseComponent } from './realtime-firebase/realtime-firebase.component';
+// import { AnimationComponent } from './animation/animation.component';
+// import { MaterialComponent } from './material/material.component';
+// import { UnitTestingComponent } from './unit-testing/unit-testing.component';
+// import { IntegrationTestingComponent } from './integration-testing/integration-testing.component';
+// import { ProjectComponent } from './project/project.component';
 
 @Component({
   selector: 'app-dashboard',

@@ -1,0 +1,19 @@
+
+<!-- heading with collapsing content -->
+<div class="panel panel-default">
+  <div class="panel-heading "
+  [ngClass]="{'expanded': isExpanded}">
+    <h3 class="panel-title" (click)="toggle()">{{title}}</h3>
+    <!-- graphic  -->
+
+    <i class="bi float-right custommy " [ngClass]="
+      {
+        'bi-arrows-collapse': !isExpanded,
+        'bi-arrows-expand': isExpanded
+      }"
+     (click)="toggle()"></i>
+  </div>
+  <div class="panel-body" [hidden]="!isExpanded">
+    <ng-content></ng-content>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+
+<h1>Input and Output Properties</h1>
+<app-favorite [isFavorite]="post.isFavorite" (change)="onFavoriteChanged($event) "></app-favorite>
+
+<h1>ngContent Test</h1>
+
+<bootstrap-panel>
+    <ng-container class="heading">This is the heading</ng-container>
+    <div class="body">
+        <h2>
+            Body
+        </h2>
+        <p>
+            Some content here...
+        </p>
+    </div>
+</bootstrap-panel>
+
+<h3> 
+    If you dont want to use ngContent to avoid the extra divs, you can use ngContainer instead
+</h3>
+
+<h1>
+    Exercise: Like Component
+</h1>
+
+<app-like [likesCount]="tweet.likesCount" [isActive]="tweet.isActive"></app-like>

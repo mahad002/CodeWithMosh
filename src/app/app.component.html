@@ -1,4 +1,12 @@
 <header class="app-bar">
     <h1>My Angular Dashboard</h1>
   </header>
-<router-outlet></router-outlet>
+  <div class="dashboard-container">
+  <app-dashboard>
+  </app-dashboard>
+  <main class="content">
+    <div class="content-container">
+  <router-outlet></router-outlet>
+  </div>
+  </main>
+</div>

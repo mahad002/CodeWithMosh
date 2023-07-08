@@ -1,0 +1,7 @@
+<span  class="bi " [ngClass]=
+"{
+    'bi-heart': !isLiked,
+    'bi-heart-fill': isLiked
+}"
+(click)="onClick()"></span>
+<span>{{ likesCount }}</span>

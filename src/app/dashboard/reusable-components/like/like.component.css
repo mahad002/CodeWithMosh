@@ -1,0 +1,9 @@
+.bi{
+    color: #ccc;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.bi-heart-fill{
+    color: deeppink;
+}
